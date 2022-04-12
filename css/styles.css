@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Space Grotesk", Arial, sans-serif;
+    font-weight: 400;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+:root{
+    --orange-light:hsl(13, 80%, 61%);
+    --light-grey:hsl(240, 1%, 29%);
+}
+
+
+/*card forecast today styles*/
+.card__today-info{
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #000;
+    margin: 1em;
+    padding: 1em;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card__main-today{
+    display: flex;
+}
+
+.temp__container{
+    display: flex;
+    align-items: center;
+}
+
+.forecast__info-nerd{
+    border-left: 1px solid var(--orange-light);
+    margin-left: .4em;
+}
+
+.card__info-today{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*forecast styles future*/
+.forecast__future-container{
+    padding-left: 0;
+}
+
+.content__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item__forescast:hover{
+    background-color: rgba(72,72,74,.05);
+}
+
+/*items forecast future styles*/
+.item__forescast{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: .5em;
+}
+
+
+
+.overcast__arrow{
+    display: flex;
+    align-items: center;
+}
+
+.overcast__advanced{
+    height: 280px;
+    opacity: 1;
+    transition-property: height, opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+}
+
+.forecast__info-future{
+    width: 100%;
+}
+
+.content__top{
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.content__top-advanced{
+    border-left: 1px solid var(--orange-light);
+    padding-left: .5em;
+}
+
+/*paragraphs styles*/
+.today__day{
+    color:var(--orange-light);
+}
+
+.top__info-des,
+.top__info-temp{
+    margin: .2em;
+}
+
+.top__info-des{
+    color: var(--light-grey);
+    font-weight: 700;
+}
+
+.top__info-des::first-letter{
+    text-transform: uppercase;
+}
+
+.today__city-name{
+    color: var(--light-grey);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.temperature__info{
+    display: inline;
+    font-size: 2.2rem;
+    color: var(--light-grey);
+}
+
+.today__description{
+    color: var(--light-grey);
+    font-weight: 700;
+}
+
+.info__temp{
+    line-height: 1.5;
+    margin: 0;
+    font-size: .8;
+    padding-left: .5em;
+}
+
+.max__min-temp,
+.day__info-text{
+    font-size: .8rem;
+}
+
+.info__view{
+    width: 50px;
+    line-height: 1;
+    font-size: .6rem;
+}
+
+.max__min-temp,
+.day__info-text{
+    display: inline-block;
+    margin: 0;
+}
+
+.temperature__info{
+    display: flex;
+    align-items: center;
+}
+
+/*icon & images styles*/
+.forecast__image{
+    display: block;
+    width: 60px;
+}
+
+.forecast__image-item{
+    width: 25px;
+}
+
+.icon__arrow{
+    display: inline-block;
+    width: 10px;
+    margin-left: 2em;
+    transition: .3s ease-in;
+
+}
+
+.icon__arrow.active{
+    transform: rotate(180deg);
+    transition: .3s ease-in;
+}
+
+.forecast__image-advanced{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+/*forecast future styles*/
+.overcast__advanced.hidden{
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    transition-property: height, visibility, opacity;
+    transition-duration: .4s, .4s, .2s;
+    transition-timing-function: ease-in;
+}
+
+
+/*table styles*/
+.table__container{
+    text-align: center;
+    color: #000;
+}
+
+.title__left{
+    text-transform: uppercase;
+    color: #8a8a8a;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.title__top{
+    font-weight: 400;
+    text-align: left;
+}
+
+
+
+@media screen and (max-width:375px){
+    .card__today-info{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .card__main-today{
+        flex-direction: column;
+    }
+
+    .forecast__info-future{
+        margin-left: 1em;
+        flex-basis: 400px;
+    }
+
+    .container__today-forecast{
+        flex: 1;
+    }   
+}

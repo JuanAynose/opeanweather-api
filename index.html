@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Api temp uwu</title>
+</head>
+<body>
+    <div class="card__today-info">
+        <div class="card__info-today">
+            <div id="card__forecast" class="container__today-forecast">
+                <div class="card__header-today">
+                    <span class="today__day">Mar 25, 13:06</span>
+                    <p class="today__city-name">Argentina, Bs</p>
+                    <p class="today__description">Feel like 15°C. Scattered clouds. Moderate breeze</p>
+                </div>
+                <div class="card__main-today">
+                    <div class="temp__container">
+                        <img id="image" src="indice.png" alt="forecast icon" class="forecast__image">
+                        <p class="temperature__info">16°C</p>
+                    </div>
+                    <div class="forecast__info-nerd">
+                        <p class="info__temp">Velocidad viento: <span class="value__temp">25</span>km/h</p>
+                        <p class="info__temp">Humedad: <span class="value__temp">45</span>%</p>
+                        <p class="info__temp">Visibilidad: <span>10.0</span>km</p>
+                        <p class="info__temp">Nubes: <span>70</span>%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast__info-future">
+                <ul id="forecast__container" class="forecast__future-container">
+                    <li id="item__clone" class="item__forescast">
+                        <div class="content__item">
+                            <div class="day__info">
+                                <p class="day__info-text"><span class="day"></span>, <span class="month"></span></p>
+                            </div>
+                            <div class="temperature__info">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-item">
+                                <p class="max__min-temp"></p>
+                            </div>
+                            <div class="overcast__arrow">
+                                <span class="info__view"></span>
+                                <img src="caret-down-solid.svg" alt="arrow icon" class="icon__arrow">
+                            </div>
+                        </div>
+                        <div class="overcast__advanced hidden">
+                            <div class="content__top">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-advanced">
+                                <div class="content__top-info">
+                                    <p class="top__info-des"></p>
+                                    <p class="top__info-temp"></p>
+                                </div>
+                            </div>
+                            <div class="content__top-advanced">
+                                <p class="item__text">Humedad: <span></span>%</p>
+                                <p class="item__text">Punto de rocio: <span></span>°C</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="title__top">Mañana</th>
+                                        <th class="title__top">Mediodía</th>
+                                        <th class="title__top">Tarde</th>
+                                        <th class="title__top">Noche</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__container">
+                                    <tr>
+                                        <td class="title__left">temperatura</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title__left">sensación termica</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li id="item__clone" class="item__forescast">
+                        <div class="content__item">
+                            <div class="day__info">
+                                <p class="day__info-text"><span class="day"></span>, <span class="month"></span></p>
+                            </div>
+                            <div class="temperature__info">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-item">
+                                <p class="max__min-temp"></p>
+                            </div>
+                            <div class="overcast__arrow">
+                                <span class="info__view"></span>
+                                <img src="caret-down-solid.svg" alt="arrow icon" class="icon__arrow">
+                            </div>
+                        </div>
+                        <div class="overcast__advanced hidden">
+                            <div class="content__top">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-advanced">
+                                <div class="content__top-info">
+                                    <p class="top__info-des"></p>
+                                    <p class="top__info-temp"></p>
+                                </div>
+                            </div>
+                            <div class="content__top-advanced">
+                                <p class="item__text">Humedad: <span></span>%</p>
+                                <p class="item__text">Punto de rocio: <span></span>°C</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="title__top">Mañana</th>
+                                        <th class="title__top">Mediodía</th>
+                                        <th class="title__top">Tarde</th>
+                                        <th class="title__top">Noche</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__container">
+                                    <tr>
+                                        <td class="title__left">temperatura</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title__left">sensación termica</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li id="item__clone" class="item__forescast">
+                        <div class="content__item">
+                            <div class="day__info">
+                                <p class="day__info-text"><span class="day"></span>, <span class="month"></span></p>
+                            </div>
+                            <div class="temperature__info">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-item">
+                                <p class="max__min-temp"></p>
+                            </div>
+                            <div class="overcast__arrow">
+                                <span class="info__view"></span>
+                                <img src="caret-down-solid.svg" alt="arrow icon" class="icon__arrow">
+                            </div>
+                        </div>
+                        <div class="overcast__advanced hidden">
+                            <div class="content__top">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-advanced">
+                                <div class="content__top-info">
+                                    <p class="top__info-des"></p>
+                                    <p class="top__info-temp"></p>
+                                </div>
+                            </div>
+                            <div class="content__top-advanced">
+                                <p class="item__text">Humedad: <span></span>%</p>
+                                <p class="item__text">Punto de rocio: <span></span>°C</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="title__top">Mañana</th>
+                                        <th class="title__top">Mediodía</th>
+                                        <th class="title__top">Tarde</th>
+                                        <th class="title__top">Noche</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__container">
+                                    <tr>
+                                        <td class="title__left">temperatura</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title__left">sensación termica</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li id="item__clone" class="item__forescast">
+                        <div class="content__item">
+                            <div class="day__info">
+                                <p class="day__info-text"><span class="day"></span>, <span class="month"></span></p>
+                            </div>
+                            <div class="temperature__info">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-item">
+                                <p class="max__min-temp"></p>
+                            </div>
+                            <div class="overcast__arrow">
+                                <span class="info__view"></span>
+                                <img src="caret-down-solid.svg" alt="arrow icon" class="icon__arrow">
+                            </div>
+                        </div>
+                        <div class="overcast__advanced hidden">
+                            <div class="content__top">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-advanced">
+                                <div class="content__top-info">
+                                    <p class="top__info-des"></p>
+                                    <p class="top__info-temp"></p>
+                                </div>
+                            </div>
+                            <div class="content__top-advanced">
+                                <p class="item__text">Humedad: <span></span>%</p>
+                                <p class="item__text">Punto de rocio: <span></span>°C</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="title__top">Mañana</th>
+                                        <th class="title__top">Mediodía</th>
+                                        <th class="title__top">Tarde</th>
+                                        <th class="title__top">Noche</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__container">
+                                    <tr>
+                                        <td class="title__left">temperatura</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title__left">sensación termica</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li id="item__clone" class="item__forescast">
+                        <div class="content__item">
+                            <div class="day__info">
+                                <p class="day__info-text"><span class="day"></span>, <span class="month"></span></p>
+                            </div>
+                            <div class="temperature__info">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-item">
+                                <p class="max__min-temp"></p>
+                            </div>
+                            <div class="overcast__arrow">
+                                <span class="info__view"></span>
+                                <img src="caret-down-solid.svg" alt="arrow icon" class="icon__arrow">
+                            </div>
+                        </div>
+                        <div class="overcast__advanced hidden">
+                            <div class="content__top">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-advanced">
+                                <div class="content__top-info">
+                                    <p class="top__info-des"></p>
+                                    <p class="top__info-temp"></p>
+                                </div>
+                            </div>
+                            <div class="content__top-advanced">
+                                <p class="item__text">Humedad: <span></span>%</p>
+                                <p class="item__text">Punto de rocio: <span></span>°C</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="title__top">Mañana</th>
+                                        <th class="title__top">Mediodía</th>
+                                        <th class="title__top">Tarde</th>
+                                        <th class="title__top">Noche</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__container">
+                                    <tr>
+                                        <td class="title__left">temperatura</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title__left">sensación termica</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li id="item__clone" class="item__forescast">
+                        <div class="content__item">
+                            <div class="day__info">
+                                <p class="day__info-text"><span class="day"></span>, <span class="month"></span></p>
+                            </div>
+                            <div class="temperature__info">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-item">
+                                <p class="max__min-temp"></p>
+                            </div>
+                            <div class="overcast__arrow">
+                                <span class="info__view"></span>
+                                <img src="caret-down-solid.svg" alt="arrow icon" class="icon__arrow">
+                            </div>
+                        </div>
+                        <div class="overcast__advanced hidden">
+                            <div class="content__top">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-advanced">
+                                <div class="content__top-info">
+                                    <p class="top__info-des"></p>
+                                    <p class="top__info-temp"></p>
+                                </div>
+                            </div>
+                            <div class="content__top-advanced">
+                                <p class="item__text">Humedad: <span></span>%</p>
+                                <p class="item__text">Punto de rocio: <span></span>°C</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="title__top">Mañana</th>
+                                        <th class="title__top">Mediodía</th>
+                                        <th class="title__top">Tarde</th>
+                                        <th class="title__top">Noche</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__container">
+                                    <tr>
+                                        <td class="title__left">temperatura</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title__left">sensación termica</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li id="item__clone" class="item__forescast">
+                        <div class="content__item">
+                            <div class="day__info">
+                                <p class="day__info-text"><span class="day"></span>, <span class="month"></span></p>
+                            </div>
+                            <div class="temperature__info">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-item">
+                                <p class="max__min-temp"></p>
+                            </div>
+                            <div class="overcast__arrow">
+                                <span class="info__view"></span>
+                                <img src="caret-down-solid.svg" alt="arrow icon" class="icon__arrow">
+                            </div>
+                        </div>
+                        <div class="overcast__advanced hidden">
+                            <div class="content__top">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-advanced">
+                                <div class="content__top-info">
+                                    <p class="top__info-des"></p>
+                                    <p class="top__info-temp"></p>
+                                </div>
+                            </div>
+                            <div class="content__top-advanced">
+                                <p class="item__text">Humedad: <span></span>%</p>
+                                <p class="item__text">Punto de rocio: <span></span>°C</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="title__top">Mañana</th>
+                                        <th class="title__top">Mediodía</th>
+                                        <th class="title__top">Tarde</th>
+                                        <th class="title__top">Noche</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__container">
+                                    <tr>
+                                        <td class="title__left">temperatura</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title__left">sensación termica</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li id="item__clone" class="item__forescast">
+                        <div class="content__item">
+                            <div class="day__info">
+                                <p class="day__info-text"><span class="day"></span>, <span class="month"></span></p>
+                            </div>
+                            <div class="temperature__info">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-item">
+                                <p class="max__min-temp"></p>
+                            </div>
+                            <div class="overcast__arrow">
+                                <span class="info__view"></span>
+                                <img src="caret-down-solid.svg" alt="arrow icon" class="icon__arrow">
+                            </div>
+                        </div>
+                        <div class="overcast__advanced hidden">
+                            <div class="content__top">
+                                <img src="indice.png" alt="forecast icon" class="forecast__image-advanced">
+                                <div class="content__top-info">
+                                    <p class="top__info-des"></p>
+                                    <p class="top__info-temp"></p>
+                                </div>
+                            </div>
+                            <div class="content__top-advanced">
+                                <p class="item__text">Humedad: <span></span>%</p>
+                                <p class="item__text">Punto de rocio: <span></span>°C</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="title__top">Mañana</th>
+                                        <th class="title__top">Mediodía</th>
+                                        <th class="title__top">Tarde</th>
+                                        <th class="title__top">Noche</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__container">
+                                    <tr>
+                                        <td class="title__left">temperatura</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title__left">sensación termica</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
